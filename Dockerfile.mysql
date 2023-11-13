@@ -1,0 +1,5 @@
+FROM mysql:5.7
+
+COPY schema_w_sample.sql /docker-entrypoint-initdb.d
+COPY mysql-healthcheck.sh /usr/local/bin/
+
